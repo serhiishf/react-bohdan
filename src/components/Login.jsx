@@ -1,7 +1,10 @@
 function Login() {
   function handleFormSubmit(event) {
     event.preventDefault();
-    console.log(event.target);
+    const userData = {username: event.target.username.value,
+      password: event.target.passwrod.value}
+    console.log(userData);
+    alert(JSON.stringify(userData))
   }
 
   return (
