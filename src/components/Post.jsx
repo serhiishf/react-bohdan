@@ -1,6 +1,7 @@
 import './Post.css';
 
-function Post({ title, body, id, userId }) {
+function Post(props) {
+  const { title, body, id, userId } = props;
   return (
     <div className="post">
       <h1>{title}</h1>
