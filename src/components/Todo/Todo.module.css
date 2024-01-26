@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: center;
   padding: 4px 15px;
-  border: 1px solid white;
+  background-color: #f2f2d6;
+  border-radius: 6px;
 }
 
 .icon {
@@ -13,4 +14,6 @@
 
 .text {
   text-align: center;
+  color: #333333;
+  font-size: 18px;
 }
