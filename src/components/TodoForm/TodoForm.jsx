@@ -8,7 +8,6 @@ function TodoForm(props) {
 
   const { addTodo } = props;
   const handleClick = () => {
-    console.log('Btn click');
   };
 
   const onSubmitHandler = (event) => {
