@@ -8,7 +8,7 @@ function TodoList(props) {
     <div className={styles.todoList}>
       {!todos.length && <h2>Todo List is empty</h2>}
       {todos.map((todo, index) => (
-        <Todo todoText={todo} key={index} deleteTodo={() => deleteTodo(index)} />
+        <Todo todoText={todo} key={index} deleteTodo={deleteTodo} index={index} />
       ))}
     </div>
   );

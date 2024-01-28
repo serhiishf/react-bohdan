@@ -3,17 +3,20 @@
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 20px;
   padding: 4px 15px;
   background-color: #f2f2d6;
   border-radius: 6px;
 }
 
 .icon {
+  font-size: 1.8rem;
+  color: teal;
 }
 
 .text {
-  text-align: center;
+  /* text-align: center; */
   color: #333333;
   font-size: 18px;
 }
