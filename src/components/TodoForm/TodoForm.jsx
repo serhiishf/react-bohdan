@@ -7,19 +7,22 @@ function TodoForm(props) {
   const [text, setText] = useState('');
 
   const { addTodo } = props;
-  const handleClick = () => {
-  };
+  const handleClick = () => {};
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    addTodo(text);
-    setText('');
+    if (text) {
+      addTodo(text);
+      setText('');
+    }
   };
 
   return (
     <form className={styles.todoForm} onSubmit={onSubmitHandler}>
       <input value={text} onChange={(e) => setText(e.target.value)} className={styles.input} type="text" placeholder="Enter new todo" />
-      <Button onClick={handleClick} buttonName="Submit" />
+      <Button onClick={handleClick} type="submit" title="Submit">
+        Submit
+      </Button>
     </form>
   );
 }

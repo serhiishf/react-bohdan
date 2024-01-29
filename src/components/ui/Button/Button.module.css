@@ -14,3 +14,8 @@
   background-color: grey;
   border: 1px solid grey;
 }
+
+.buttonDisabled {
+  color: rgb(158, 154, 154);
+  border-color: rgb(158, 154, 154);
+}
